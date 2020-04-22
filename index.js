@@ -3,6 +3,7 @@ module.exports = global.process = {
   version: "7.1.0",
   umask: () => 18,
   cwd: () => "",
+  on: () => {},
   nextTick: setImmediate,
   env: {
     HOME: RNOS.homedir()
